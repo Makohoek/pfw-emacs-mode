@@ -27,10 +27,16 @@
                           ("sequenceAware:" . font-lock-keyword-face)
                           ("supConf:" . font-lock-keyword-face)
                           ("supDomain:" . font-lock-keyword-face)))
-;; TODO: builtins
+;; builtins
 ;; these are not really builtins, but it's nice to have another
 ;; color for them (font-lock-builtin-face)
-;;(font-lock-add-keywords 'parameter-framework-mode
-;;                        '(()))
+(font-lock-add-keywords 'parameter-framework-mode
+                        '(("ALL" . font-lock-type-face)
+                          ("ANY" . font-lock-type-face)
+                          ("Is" . font-lock-type-face)
+                          ("IsNot" . font-lock-type-face)
+                          ("Includes" . font-lock-type-face)
+                          ("Excludes" . font-lock-type-face)
+                          ("ANY" . font-lock-type-face)))
 
 (provide 'parameter-framework)
